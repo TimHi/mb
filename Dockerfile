@@ -12,8 +12,8 @@ RUN --mount=type=cache,target=/go/pkg/mod/ \
 RUN --mount=type=cache,target=/go/pkg/mod/ \
     --mount=type=bind,target=. \
     go build -ldflags='-s -w -extldflags "-static"' -o /bin/server -tags sqlite_math_functions ./cmd/server
-    # static linking is necessary because of CGO dependency
-    # -s -w removes debug info for smaller bin
+# static linking is necessary because of CGO dependency
+# -s -w removes debug info for smaller bin
 
 FROM alpine:latest AS final
 
@@ -21,17 +21,6 @@ ARG GIT_COMMIT=unspecified
 LABEL org.opencontainers.image.version=$GIT_COMMIT
 LABEL org.opencontainers.image.source=https://github.com/Pineapple217/mb
 
-# Removed user because of file permisions
-# ARG UID=10001
-# RUN adduser \
-#     --disabled-password \
-#     --gecos "" \
-#     --home "/nonexistent" \
-#     --shell "/sbin/nologin" \
-#     --no-create-home \
-#     --uid "${UID}" \
-#     appuser
-# USER appuser
 
 WORKDIR /app
 COPY --from=build /bin/server /app/server
