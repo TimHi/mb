@@ -15,7 +15,7 @@ const (
 	defaultLink    = "https://timhi.xyz"
 	defaultRights  = "timhi.xyz"
 	defaultMessage = "Darfs noch etwas mehr sein"
-	defaultHost    = "http://localhost:3000"
+	defaultHost    = "http://localhost:1018"
 	defaultDebug   = false
 
 	DataDir   = "./data"

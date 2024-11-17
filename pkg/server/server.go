@@ -14,7 +14,7 @@ import (
 
 var (
 	listen = flag.String("listen", "127.0.0.1", "Where to listen, 0.0.0.0 is needed for docker")
-	port   = flag.String("port", ":3000", "Port to listen on")
+	port   = flag.String("port", ":1018", "Port to listen on")
 )
 
 type Server struct {

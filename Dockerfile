@@ -25,6 +25,6 @@ LABEL org.opencontainers.image.source=https://github.com/Pineapple217/mb
 WORKDIR /app
 COPY --from=build /bin/server /app/server
 
-EXPOSE 3000
+EXPOSE 1018
 
 CMD [ "/app/server", "-listen", "0.0.0.0" ]

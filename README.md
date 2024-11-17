@@ -79,7 +79,7 @@ services:
     env_file:
       - .env
     ports:
-      - 3000:3000
+      - 1018:1018
 ```
 
 ```console
@@ -98,7 +98,7 @@ docker compose up -d
 | `MB_RIGHTS`        | Name of the right holder thingy                                                   | `mb.dev` just a placeholder                                             |
 | `MB_LINK`          | Link displayed at the top fo the page                                             | `https://mb.dev` link does not exist                                    |
 | `MB_MESSAGE`       | Message displayed at the top of the page                                          | `Created without any JS.`                                               |
-| `MB_HOST`          | The full host url where the blog is hosted. For ex. `https://mb.pine32.be`        | `http://localhost:3000`                                                 |
+| `MB_HOST`          | The full host url where the blog is hosted. For ex. `https://mb.pine32.be`        | `http://localhost:1018`                                                 |
 
 # Performance
 
@@ -108,6 +108,6 @@ profiling util
 
 https://github.com/sevennt/echo-pprof
 
-http://127.0.0.1:3000/debug/pprof/
+http://127.0.0.1:1018/debug/pprof/
 
 go tool pprof -http=:8080 .\profile
