@@ -114,7 +114,7 @@ func boiler(desc string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"><title>MB</title></head><a href=\"/auth\" accesskey=\"a\" aria-hidden=\"true\" tabindex=\"-1\"></a> <a href=\"/media\" accesskey=\"m\" aria-hidden=\"true\" tabindex=\"-1\"></a> <a href=\"/backup\" accesskey=\"b\" aria-hidden=\"true\" tabindex=\"-1\"></a>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"><title>TimHi - Blog</title></head><a href=\"/auth\" accesskey=\"a\" aria-hidden=\"true\" tabindex=\"-1\"></a> <a href=\"/media\" accesskey=\"m\" aria-hidden=\"true\" tabindex=\"-1\"></a> <a href=\"/backup\" accesskey=\"b\" aria-hidden=\"true\" tabindex=\"-1\"></a>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

@@ -11,10 +11,10 @@ import (
 )
 
 const (
-	defaultLogo    = " • ▌ ▄ ·. ▄▄▄▄· \n ·██ ▐███▪▐█ ▀█▪\n ▐█ ▌▐▌▐█·▐█▀▀█▄\n ██ ██▌▐█▌██▄▪▐█\n ▀▀  █▪▀▀▀·▀▀▀▀ "
-	defaultLink    = "https://mb.dev"
-	defaultRights  = "mb.dev"
-	defaultMessage = "Created without any JS."
+	defaultLogo    = "▄▄▄▄▄▪  • ▌ ▄ ·.  ▄ .▄▪  \n•██  ██ ·██ ▐███▪██▪▐███ \n ▐█.▪▐█·▐█ ▌▐▌▐█·██▀▐█▐█·\n ▐█▌·▐█▌██ ██▌▐█▌██▌▐▀▐█▌\n ▀▀▀ ▀▀▀▀▀  █▪▀▀▀▀▀▀ ·▀▀▀\n"
+	defaultLink    = "https://timhi.xyz"
+	defaultRights  = "timhi.xyz"
+	defaultMessage = "Darfs noch etwas mehr sein"
 	defaultHost    = "http://localhost:3000"
 	defaultDebug   = false
 
